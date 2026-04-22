@@ -1,11 +1,11 @@
 
 # Web Design :
 
-> **Status:** Completed ✅
-> **Level:** First Year 
-> **Name:** Arjun Korlekar
-> **MIS-No:** 612505021
-> **Objective:** Fulfill syllabus requirements 
+> **Status:** Completed ✅<br>
+> **Level:** First Year <br>
+> **Name:** Arjun Korlekar<br>
+> **MIS-No:** 612505021<br>
+> **Objective:** Fulfill syllabus requirements<br>
 
 This repository contains the complete lab assignments for the Web Design course.Each assignment utilizes best practices, semantic HTML5, modern CSS3 (Flexbox/Grid, Variables), and robust ES6+ JavaScript/Node.js patterns.
 

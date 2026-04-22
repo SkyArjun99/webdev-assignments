@@ -8,7 +8,7 @@
 > **Objective:** Fulfill syllabus requirements<br>
 
 This repository contains the complete lab assignments for the Web Design course.Each assignment utilizes best practices, semantic HTML5, modern CSS3 (Flexbox/Grid, Variables), and robust ES6+ JavaScript/Node.js patterns.
-
+ 
 ---
 
 ## 📂 Project Structure

@@ -1,4 +1,4 @@
-// Overkill: Handling CLI arguments and System Time without external libraries
+//  Handling CLI arguments and System Time without external libraries
 
 // ANSI Color Codes for Terminal
 const colors = {

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Specificity Wars</title>
+    <!-- Internal CSS: Clean, reusable, scoped -->
+    <style>
+        body { font-family: sans-serif; display: flex; padding: 2rem; gap: 2rem; background: #e0e0e0; }
+        
+        /* Container for the Internal Style Demo */
+        .card-modern {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            flex: 1;
+            transition: transform 0.2s;
+        }
+        .card-modern:hover { transform: translateY(-5px); }
+        .card-modern h2 { color: #2c3e50; border-bottom: 2px solid #3498db; display: inline-block; }
+        
+        /* Internal Base Styles */
+        .split { display: flex; }
+    </style>
+</head>
+<body>
+
+    <!-- The "Internal CSS" Card -->
+    <div class="card-modern">
+        <h2>Internal CSS (The Good Way)</h2>
+        <p>This card is styled using a <code>&lt;style&gt;</code> block. It's maintainable, separates concerns, and supports hover states.</p>
+        <p style="color: #27ae60; font-weight: bold;">✓ Best Practice</p>
+    </div>
+
+    <!-- The "Inline CSS" Card -->
+    <div class="legacy-box" style="flex: 1; background: #fff0f0; padding: 2rem; border: 2px dashed red; border-radius: 4px; font-family: sans-serif;">
+        <h2 style="color: red; margin-top: 0;">Inline CSS (The Hard Way)</h2>
+        <p style="font-size: 14px; color: #555;">Every element needs style attributes. No hover effects. High specificity nightmares. Hard to read.</p>
+        <p style="color: red; font-weight: bold;">✖ Avoid when possible</p>
+    </div>
+
+</body>
+</html>

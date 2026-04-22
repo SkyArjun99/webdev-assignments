@@ -1,0 +1,106 @@
+/* SECRET OPS THEME */
+:root {
+    --term-green: #33ff00;
+    --term-bg: #0a0a0a;
+    --term-dim: #1a1a1a;
+    --scanline: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    margin: 0;
+    background-color: var(--term-bg);
+    color: var(--term-green);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+/* CRT Scanline Effect */
+body::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+.terminal {
+    width: 90%;
+    max-width: 500px;
+    border: 2px solid var(--term-green);
+    padding: 20px;
+    background: rgba(10, 10, 10, 0.9);
+    box-shadow: 0 0 20px var(--term-green);
+    position: relative;
+    z-index: 3;
+}
+
+.header {
+    border-bottom: 1px dashed var(--term-green);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+input,
+textarea {
+    background: var(--term-dim);
+    border: 1px solid var(--term-green);
+    color: var(--term-green);
+    font-family: inherit;
+    padding: 10px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 10px var(--term-green);
+}
+
+button {
+    background: var(--term-green);
+    color: black;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: white;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASSIFIED // UPLOAD</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="terminal">
+        <div class="header">
+            <h2>[ TOP SECRET ]</h2>
+            <p>SECURE TRANSMISSION PORTAL</p>
+        </div>
+        
+        <form action="/submit" method="POST">
+            <label>AGENT CODENAME:</label>
+            <input type="text" name="codename" placeholder="ENTER ID..." required autocomplete="off">
+            
+            <label>ENCRYPTED MESSAGE:</label>
+            <textarea name="mission" rows="4" placeholder="ENTER DATA..." required></textarea>
+            
+            <button type="submit" class="blink">INITIATE UPLOAD</button>
+        </form>
+    </div>
+</body>
+</html>

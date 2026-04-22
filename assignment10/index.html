@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Entry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-box">
+        <h2>Access Request</h2>
+        <form id="accessForm" novalidate>
+            <div>
+                <label>Operative Name</label>
+                <input type="text" id="name" placeholder="Enter name">
+                <div class="error-msg" id="name-error">Name is required</div>
+            </div>
+            
+            <div>
+                <label>Secure Email</label>
+                <input type="email" id="email" placeholder="agent@domain.com">
+                <div class="error-msg" id="email-error">Valid email required</div>
+            </div>
+
+            <button type="submit">Request Access</button>
+        </form>
+    </div>
+
+    <script lang="JavaScript" src="scripts.js">
+        
+    </script>
+</body>
+</html>

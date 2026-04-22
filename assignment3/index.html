@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures</title>
+    <style>
+        body { font-family: sans-serif; padding: 2rem; background: #f4f4f9; }
+        .container { max-width: 900px; margin: 0 auto; }
+        
+        /*Table Styling */
+        table { width: 100%; border-collapse: collapse; margin: 2rem 0; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #333; color: white; text-transform: uppercase; font-size: 0.85em; letter-spacing: 1px; }
+        tr:hover { background-color: #f1f1f1; transition: background 0.2s; }
+        
+        /* List Styling */
+        ul { list-style-type: square; }
+        ol { line-height: 1.8; }
+        li strong { color: #2c3e50; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Roadmap</h1>
+        <h2>Name: Mini Project</h2>
+        <!-- Nested List -->
+        <h3>Technology Stack</h3>
+        <ul>
+            <li>
+                <strong>Frontend</strong>
+                <ol>
+                    <li>HTML5 Semantic Structure</li>
+                    <li>CSS3 Grid & Flexbox</li>
+                    <li>JavaScript (ES6+)</li>
+                </ol>
+            </li>
+            <li>
+                <strong>Backend</strong>
+                <ol>
+                    <li>Node.js Runtime</li>
+                    <li>Express Framework</li>
+                </ol>
+            </li>
+        </ul>
+
+        <!-- Data Table -->
+        <h3>Server Allocation</h3>
+        <table>
+            <caption>Current Resource Distribution</caption>
+            <thead>
+                <tr>
+                    <th>Server ID</th>
+                    <th>Region</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SRV-001</td>
+                    <td>Dhayari</td>
+                    <td style="color: green;">Operational</td>
+                </tr>
+                <tr>
+                    <td>SRV-002</td>
+                    <td>Shivaji Nagar</td>
+                    <td style="color: orange;">Maintenance</td>
+                </tr>
+                <tr>
+                    <td>SRV-003</td>
+                    <td>Swargate</td>
+                    <td style="color: green;">Operational</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

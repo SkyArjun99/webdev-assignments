@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Overkill Assignment 1: Environment Setup">
+    <title>Env Setup | Dev Mode</title>
+    <style>
+        /* Minimal reset and centered flex layout */
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace; /* Dev vibe */
+            background-color: #0d1117;
+            color: #00ff41;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .terminal-card {
+            border: 1px solid #30363d;
+            padding: 2rem;
+            border-radius: 6px;
+            background: #161b22;
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <main class="terminal-card">
+        <h1>> INITIALIZING SYSTEM...</h1>
+        <p>> Hello World.</p>
+        <p>> Environment: <strong>Production Ready</strong></p>
+    </main>
+    <script>
+        // Overkill: Logging system status
+        console.log("%c SYSTEM READY ", "background: #00ff41; color: #000; font-weight: bold; padding: 4px;");
+        console.log("DOM Content Loaded");
+    </script>
+</body>
+</html>
